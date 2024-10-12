@@ -293,7 +293,7 @@ app.get('/hotels/filter/amenity', (req, res) => {
 // 5. Function to filter hotels by country
 function filterByCountry(hotel, country) {
   return hotel.country === country; 
-
+}
 // 5. Endpoint to filter hotels by country
 app.get('/hotels/filter/country', (req, res) => {
   const country = req.query.country; 
