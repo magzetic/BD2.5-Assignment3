@@ -304,7 +304,7 @@ app.get('/hotels/filter/country', (req, res) => {
 });
 // 6. Function to filter hotels by category
 function filterByCategory(hotel, category) {
-  return hotel.category === category;
+  return hotel.category.toLowerCase() === category.toLowerCase();
 }
 
 // 6. Endpoint to filter hotels by category
