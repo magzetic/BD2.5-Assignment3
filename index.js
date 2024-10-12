@@ -279,7 +279,7 @@ app.get('/hotels/sort/reviews', (req, res) => {
 });
 // 4. Function to filter hotels by amenity
 function filterByAmenity(hotel, amenity) {
-  return hotel.amenity === amenity;
+  return hotel.amenity.toLowerCase() === amenity.toLowerCase();
 }
 
 // 4. Endpoint to filter hotels by amenity
